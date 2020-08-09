@@ -1,2 +1,2 @@
 # StreamingApp
-Steaming App 
+Steaming App - Testing creation and maintenance of Streaming app. Written in Node (mostly).
