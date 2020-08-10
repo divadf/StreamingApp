@@ -1,0 +1,23 @@
+{
+  "name": "StreamingApp",
+  "version": "1.0.0",
+  "description": "Steaming App - Testing creation and maintenance of Streaming app. Written in Node (mostly).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divadf/StreamingApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divadf/StreamingApp/issues"
+  },
+  "homepage": "https://github.com/divadf/StreamingApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
