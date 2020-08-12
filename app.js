@@ -6,11 +6,12 @@ var url = require('url');
 var path = require('path');
 var zlib = require('zlib');
 var app = express();
-var path = "/path/to/your/base_directory/";
+var path = require('path');
 
+app.use(express.static(path.join(__dirname,'output')));
 app.get('/', function (req, res) {
    //res.send('Hello World!!');
-   res.send("<H1>Header First </H1>")
+   res.send("/index.html")
    res.sendstatus(200)
 })
 app.get('/get', (req, res) => {
