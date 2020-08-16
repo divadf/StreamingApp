@@ -1,8 +1,15 @@
-agent {
-    docker {
-        image 'docker pull node'
-        dir 'build'
-        label 'nodeStreamApp'
-        args  '-v /tmp:/tmp'
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
     }
 }
