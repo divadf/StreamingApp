@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "node convert.js"
+run = "node app.js"
