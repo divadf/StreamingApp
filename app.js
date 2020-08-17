@@ -1,4 +1,3 @@
-var express = require('express');
 const bodyParser = require('body-parser');
 var http = require('http');
 var url = require('url');
@@ -7,17 +6,21 @@ const hls = require('hls-server');
 var app = express();
 const PORT = 8080
 
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname +'/index.html'))
 })
 app.get('/get', (req, res) => {
 	// On get request URI 
+
   console.log("file has been requested")
+
   res.sendFile(path.join(__dirname +'/output/output0.ts'))
   
 })
 app.get('/get/m3u8', (req, res) => {
 	// On post request URI
+
   console.log("video m3u8 has been sent");
   res.sendFile(path.join(__dirname+'/output/output.m3u8'))
 })
