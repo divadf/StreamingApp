@@ -1,4 +1,5 @@
 const bodyParser = require('body-parser');
+const express = require('express')
 var http = require('http');
 var url = require('url');
 var path = require('path');
@@ -13,15 +14,12 @@ app.get('/', function (req, res) {
 app.get('/get', (req, res) => {
 	// On get request URI 
 
-  console.log("file has been requested")
-
   res.sendFile(path.join(__dirname +'/output/output0.ts'))
   
 })
 app.get('/get/m3u8', (req, res) => {
 	// On post request URI
 
-  console.log("video m3u8 has been sent");
   res.sendFile(path.join(__dirname+'/output/output.m3u8'))
 })
 app.get('/get/mp4', (req, res) => {
